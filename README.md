@@ -1,2 +1,3 @@
 React-journal
-# Capstone
+# RecyclePedia
+
