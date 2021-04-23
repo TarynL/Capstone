@@ -1,6 +1,7 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { PrivateList } from "./recyclables/PrivateList"
+import { PrivateForm } from "./recyclables/PrivateForm"
 import {Home} from "./Home"
 
 export const ApplicationViews = () => {
@@ -14,6 +15,9 @@ export const ApplicationViews = () => {
         <Route exact path="/yourList">
         <PrivateList />
         </Route>
+        <Route path="/yourList/create">
+        <PrivateForm />
+      </Route>
 
         <Route exact path="/collections">
         
