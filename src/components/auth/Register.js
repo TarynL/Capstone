@@ -86,6 +86,7 @@ export const Register = () => {
                 <fieldset className="submitButtonSection">
                     <button type="submit" className="registerButton"> Sign in </button>
                 </fieldset>
+                
             </form>
             <Footer />
         </main>

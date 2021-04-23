@@ -1,10 +1,10 @@
 import React from "react";
 import "./NavBar.css";
 import { Link, useHistory } from "react-router-dom";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../images/logo.png";
 
-export const NavBar = (props) => {
+export const NavBar = () => {
 const history = useHistory();
 
   const handleLogout = () => {
@@ -22,17 +22,18 @@ const history = useHistory();
         <li className="nav-item">
           <Link className="nav-link" to="/">Home</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/yourList">YourList</Link>
+         <li className="nav-item">
+          <Link className="nav-link" to="/yourList">Your List</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/collections">Collections</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" onClick={handleLogout} to="/Login"> Logout </Link>
+          <Link className="nav-link" onClick={handleLogout} to="/login"> Logout </Link>
         </li>
       </ul>
-      </div>
+      </div> 
     </nav>
   )
 }
+
