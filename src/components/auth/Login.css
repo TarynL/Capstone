@@ -1,0 +1,57 @@
+.dialog {
+    min-width: 15rem;
+    min-height: 5rem;
+  }
+
+  h1, h3 {
+      margin-left: 1rem;
+
+  }
+  
+  fieldset {
+    min-width: 0;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    border: 0;
+}
+
+  .loginButton{
+    /* background-color: #a7b3a5;
+    border: solid 2px black;
+    margin: 5px; */
+  }
+  
+  .link--register{
+    
+    color:black;
+    
+    margin: 5px;
+    width: fit-content;
+  }
+
+  .form-control{
+    display: block;
+    width: 200px;
+    background-clip: padding-box;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+  }
+  
+  .emailInput{
+    display: flex;
+    margin: 3px 0px 20px 0px;
+
+  }
+  
+  .form--login{
+    text-align: left;
+    background-position-x:right;
+    background-image: url(plastic.jpg);
+    z-index: 1;
+    min-height: 70rem;
+    min-width: 70rem;
+    background-color: rgba(255, 255, 255, 0.774);
+    background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  }
