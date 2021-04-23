@@ -2,6 +2,11 @@ const remoteURL = "http://localhost:8088"
 
 const currentUser = sessionStorage.getItem("recyclePedia_user")
 
+export const getAllRecyclables = () => {
+    return fetch(`${remoteURL}/recyclables`)
+    .then (result => result.json())
+}
+
 export const getMyRecyclables = () => {
     return fetch(`${remoteURL}/lists?userId=${currentUser}&_expand=recyclable`)
     .then (result => result.json())
@@ -28,3 +33,9 @@ export const addToList = (listObj) => {
     })
     .then(response => response.json())
 }
+
+export const deleteRecyclable = (id) => {
+    return fetch(`${remoteURL}/lists/${id}`, {
+      method: "DELETE"
+    }).then(response => response.json())
+  }
