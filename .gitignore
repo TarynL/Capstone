@@ -22,7 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-database.json
+
 Settings.js
 
 .eslintcache
