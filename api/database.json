@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Taryn Lytle",
+      "email": "taryn@taryn.com"
+    },
+    {
+      "id": 2,
+      "name": "Haley Grant",
+      "email": "haley@haley.com"
+    },
+    {
+      "id": 3,
+      "name": "Augustus Walter",
+      "email": "gus@gus.com"
+    },
+    {
+      "email": "earl@earl.com",
+      "name": "Earl Henry",
+      "id": 4
+    },
+    {
+      "email": "haley@cute.org",
+      "name": "Haley Louise",
+      "id": 5
+    }
+  ],
+  "recyclables": [
+    {
+      "id": 1,
+      "title": "Plastic Water Bottle",
+      "image": "",
+      "instruction": "Remove all liquid. Plastic caps should be left on. Do NOT place loose caps in the recycling container.",
+      "recycle": true
+    },
+    {
+      "id": 2,
+      "title": "Cereal Box",
+      "image": "",
+      "instruction": "All contents removed. Cardboard should be flattened.",
+      "recycle": true
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "userId": 1,
+      "recyclableId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "recyclableId": 2
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "recyclableId": 2
+    }
+  ]
+}

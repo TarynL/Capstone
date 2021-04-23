@@ -1,0 +1,16 @@
+strong {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-family:  'Expletus Sans', cursive;}
+  
+  body {
+    font-family:  'Forum', cursive;
+  }
+  
+  .applicationView{
+    margin: 10px 0px 10px 10px;
+    min-height: 100vh;
+  
+  }
