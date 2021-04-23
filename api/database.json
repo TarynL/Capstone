@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Taryn Lytle",
+      "email": "taryn@taryn.com"
+    },
+    {
+      "id": 2,
+      "name": "Haley Grant",
+      "email": "haley@haley.com"
+    },
+    {
+      "id": 3,
+      "name": "Augustus Walter",
+      "email": "gus@gus.com"
+    },
+    {
+      "email": "earl@earl.com",
+      "name": "Earl earl",
+      "id": 4
+    }
+  ],
+  "recyclables": [
+    {
+      "id": 1,
+      "title": "Plastic Water Bottle",
+      "image": "https://cdn1.bigcommerce.com/server3900/9b2d7/product_images/uploaded_images/plastic-water-bottle.jpg",
+      "instruction": "Remove all liquid. Plastic caps should be left on. Do NOT place loose caps in the recycling container.",
+      "recycle": true
+    },
+    {
+      "id": 2,
+      "title": "Cereal Box",
+      "image": "http://neatdesigns.net/wp-content/uploads/2012/02/1332.jpg",
+      "instruction": "All contents removed. Cardboard should be flattened.",
+      "recycle": true
+    },
+    {
+      "id": 3,
+      "title": "Soup Can",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_pyPgkdg8Y0SGDpgsRJetlTbSHHzm_dAw26YxY-ibNkrWqDeY2ToG9PDEfZ24b-28aX7qBk&usqp=CAc",
+      "instruction": "All contents removed. Rinse thoroughly. Remove label and throw in trash. Place lid inside of can.",
+      "recycle": true
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "userId": 1,
+      "recyclableId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "recyclableId": 2
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "recyclableId": 3
+    }
+  ]
+}
