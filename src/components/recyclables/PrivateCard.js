@@ -3,7 +3,7 @@ import './Private.css'
 // import {getSingleRecyclable} from "../../modules/RecyclablesManager";
 // import {useHistory} from "react-router-dom";
 
-export const PrivateCard = ({recyclable}) => {
+export const PrivateCard = ({recyclable, handleDeleteRecyclable}) => {
     // history = useHistory();
     
     return (
@@ -14,6 +14,7 @@ export const PrivateCard = ({recyclable}) => {
                 <img className="recyclableImage" src={recyclable.recyclable.image} alt="recyclable"/>
                 <p><strong>Instructions: </strong> {recyclable.recyclable.instruction}</p>
             </div>
+            <button type="button" className="button" onClick={() => handleDeleteRecyclable(recyclable.id)}>Delete</button>
         </div>
         </>
     )

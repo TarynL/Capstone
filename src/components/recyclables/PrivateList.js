@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PrivateCard } from './PrivateCard';
-import { getMyRecyclables } from '../../modules/PrivateListManager';
+import { getMyRecyclables, deleteRecyclable } from '../../modules/PrivateListManager';
 import {useHistory} from 'react-router-dom'
 
 export const PrivateList = () => {
@@ -14,10 +14,20 @@ export const PrivateList = () => {
                 setPrivates(res)
             });
     };
+    
+    const handleDeleteRecyclable = (id) => {
+        deleteRecyclable(id)
+        .then(() => getMyRecyclables()
+        .then(() => history.push("/yourList"))
+        );
+
+    }
 
     useEffect(() => {
         getRecyclables();
     }, []);
+
+    
 
     return (
         <> 
@@ -31,6 +41,7 @@ export const PrivateList = () => {
                     <PrivateCard
                         key={recyclable.id}
                         recyclable={recyclable}
+                        handleDeleteRecyclable={handleDeleteRecyclable}
                     />)}
             </div>
         </>
