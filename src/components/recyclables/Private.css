@@ -1,0 +1,23 @@
+.card {
+    max-width: 200px;
+    display: flex;
+    border: 1px dashed gray;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .recyclableImage img {
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content{
+    color: black;
+  }
+
+  .recyclableImage{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }

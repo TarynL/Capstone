@@ -1,6 +1,6 @@
 import React from "react"
 import { Route } from "react-router-dom"
-import { PrivateCard } from "./recyclables/PrivateCard"
+import { PrivateList } from "./recyclables/PrivateList"
 import {Home} from "./Home"
 
 export const ApplicationViews = () => {
@@ -12,7 +12,7 @@ export const ApplicationViews = () => {
         </Route>
 
         <Route exact path="/yourList">
-        <PrivateCard />
+        <PrivateList />
         </Route>
 
         <Route exact path="/collections">
