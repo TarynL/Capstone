@@ -25,14 +25,14 @@
     {
       "id": 1,
       "title": "Plastic Water Bottle",
-      "image": "",
+      "image": "https://cdn1.bigcommerce.com/server3900/9b2d7/product_images/uploaded_images/plastic-water-bottle.jpg",
       "instruction": "Remove all liquid. Plastic caps should be left on. Do NOT place loose caps in the recycling container.",
       "recycle": true
     },
     {
       "id": 2,
       "title": "Cereal Box",
-      "image": "",
+      "image":"http://neatdesigns.net/wp-content/uploads/2012/02/1332.jpg",
       "instruction": "All contents removed. Cardboard should be flattened.",
       "recycle": true
     }
