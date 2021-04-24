@@ -39,3 +39,13 @@ export const deleteRecyclable = (id) => {
       method: "DELETE"
     }).then(response => response.json())
   }
+
+  export const updateRecylable = (editedRecylable) => {
+    return fetch(`${remoteURL}/lists?${editedRecylable.id}&_expand=recylable`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedRecylable)
+    }).then(data => data.json());
+  }

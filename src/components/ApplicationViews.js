@@ -2,6 +2,7 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { PrivateList } from "./recyclables/PrivateList"
 import { PrivateForm } from "./recyclables/PrivateForm"
+import {PublicList} from "./collections/PublicList"
 import {Home} from "./Home"
 
 export const ApplicationViews = () => {
@@ -20,7 +21,7 @@ export const ApplicationViews = () => {
       </Route>
 
         <Route exact path="/collections">
-        
+        <PublicList />
         </Route>
         </>
     )
