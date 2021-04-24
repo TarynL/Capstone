@@ -17,7 +17,8 @@ export const PrivateList = () => {
     
     const handleDeleteRecyclable = (id) => {
         deleteRecyclable(id)
-        .then(() => getMyRecyclables()
+        .then(() => getMyRecyclables(id)
+        .then(setPrivates)
         .then(() => history.push("/yourList"))
         );
 
