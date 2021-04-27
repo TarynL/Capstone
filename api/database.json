@@ -42,23 +42,33 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_pyPgkdg8Y0SGDpgsRJetlTbSHHzm_dAw26YxY-ibNkrWqDeY2ToG9PDEfZ24b-28aX7qBk&usqp=CAc",
       "instruction": "All contents removed. Rinse thoroughly. Remove label and throw in trash. Place lid inside of can.",
       "recycle": true
+    },
+    {
+      "title": "test",
+      "image": "test",
+      "instruction": "test",
+      "recycle": true,
+      "id": 4
     }
   ],
   "lists": [
     {
       "id": 1,
       "userId": 1,
-      "recyclableId": 1
+      "recyclableId": 1,
+      "userNotes": "Remove label."
     },
     {
       "id": 2,
       "userId": 1,
-      "recyclableId": 3
+      "recyclableId": 3,
+      "userNotes": ""
     },
     {
       "id": 3,
       "userId": 2,
-      "recyclableId": 3
+      "recyclableId": 3,
+      "userNotes": ""
     }
   ],
   "facts": [

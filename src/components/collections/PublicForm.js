@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
-import {addRecyclable} from '../../modules/PrivateListManager';
-import './Private.css';
+import {addRecyclable} from '../../modules/PublicListManager';
+import './Public.css';
 
-export const PrivateForm = () => {
+export const PublicForm = () => {
     // const loggedInUser = JSON.parse(sessionStorage.getItem("recyclePedia_user"))
     const [recyclable, setRecyclable] = useState({
         title: "",
@@ -26,7 +26,7 @@ export const PrivateForm = () => {
         setIsLoading(false)
         addRecyclable(recyclable)
         // another .then to add new recyclable to lists
-        .then(() => history.push("/yourList"))
+        .then(() => history.push("/collections"))
         
     }
 

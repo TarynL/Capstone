@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { PublicCard } from './PublicCard';
 import { getAllRecyclables } from '../../modules/PublicListManager';
-// import {useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 export const PublicList = () => {
 
     const [publics, setPublics] = useState([]);
-    // const history = useHistory();
+    const history = useHistory();
 
     const getPublicRecyclables = () => {
         
@@ -27,6 +27,11 @@ export const PublicList = () => {
 
     return (
         <> 
+        <button type="button"
+                    className="button"
+                    onClick={() => { history.push("/collections/create") }}>
+                    Add a New Recyclable
+            </button>
            
             <div className="container-cards">
                 {publics.map(recyclable =>
