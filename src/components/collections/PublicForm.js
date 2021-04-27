@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
-import {addRecyclable} from '../../modules/PrivateListManager';
-import './Private.css';
+import {addRecyclable} from '../../modules/PublicListManager';
+import './Public.css';
 
-export const PrivateForm = () => {
+export const PublicForm = () => {
     // const loggedInUser = JSON.parse(sessionStorage.getItem("recyclePedia_user"))
     const [recyclable, setRecyclable] = useState({
         title: "",
         image: "",
-        instructions: "",
+        instruction: "",
         recycle: true //may want to change this for nonrecycle stretch goal
     });
 
@@ -26,7 +26,7 @@ export const PrivateForm = () => {
         setIsLoading(false)
         addRecyclable(recyclable)
         // another .then to add new recyclable to lists
-        .then(() => history.push("/yourList"))
+        .then(() => history.push("/collections"))
         
     }
 
@@ -45,7 +45,7 @@ export const PrivateForm = () => {
             </div>
             <div className="form-group">
                 <label htmlFor="new_instructions">Instructions: </label>
-                <input type="text" id="instructions" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Instructions" value={recyclable.instructions} />
+                <input type="text" id="instruction" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Instructions" value={recyclable.instruction} />
             </div>
         </fieldset>
         <button className="button"
