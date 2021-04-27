@@ -8,7 +8,7 @@ export const PrivateForm = () => {
     const [recyclable, setRecyclable] = useState({
         title: "",
         image: "",
-        instructions: "",
+        instruction: "",
         recycle: true //may want to change this for nonrecycle stretch goal
     });
 
@@ -45,7 +45,7 @@ export const PrivateForm = () => {
             </div>
             <div className="form-group">
                 <label htmlFor="new_instructions">Instructions: </label>
-                <input type="text" id="instructions" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Instructions" value={recyclable.instructions} />
+                <input type="text" id="instruction" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Instructions" value={recyclable.instruction} />
             </div>
         </fieldset>
         <button className="button"

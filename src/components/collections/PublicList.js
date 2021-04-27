@@ -9,6 +9,7 @@ export const PublicList = () => {
     // const history = useHistory();
 
     const getPublicRecyclables = () => {
+        
         return getAllRecyclables()
             .then(res => {
                 setPublics(res)

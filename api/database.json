@@ -53,7 +53,7 @@
     {
       "id": 2,
       "userId": 1,
-      "recyclableId": 2
+      "recyclableId": 3
     },
     {
       "id": 3,
@@ -64,44 +64,43 @@
   "facts": [
     {
       "id": 1,
-      "fact":"Americans use an average of 2.5 million plastic bottles every hour, most of which are thrown away.",
-      "image":"https://cdn.pixabay.com/photo/2019/06/15/18/03/bottles-4276208__480.jpg"
+      "fact": "Americans use an average of 2.5 million plastic bottles every hour, most of which are thrown away.",
+      "image": "https://cdn.pixabay.com/photo/2019/06/15/18/03/bottles-4276208__480.jpg"
     },
     {
       "id": 2,
-      "fact":"Toilet paper requires 27,000 trees to be cut down per day.",
-      "image":"https://miro.medium.com/max/934/1*L7oxvH-C86p41gqurDtwqQ.png"
+      "fact": "Toilet paper requires 27,000 trees to be cut down per day.",
+      "image": "https://miro.medium.com/max/934/1*L7oxvH-C86p41gqurDtwqQ.png"
     },
     {
       "id": 3,
-      "fact":"Humans throw away enough paper and wood each year to heat 50 million houses for 20 years.",
-      "image":"https://cdn.pixabay.com/photo/2018/11/03/22/24/fire-3792951__480.jpg"
+      "fact": "Humans throw away enough paper and wood each year to heat 50 million houses for 20 years.",
+      "image": "https://cdn.pixabay.com/photo/2018/11/03/22/24/fire-3792951__480.jpg"
     },
     {
       "id": 4,
-      "fact":"Less than 1% of the water supplies found on Earth are usable by people. 97% of water is found in the oceans and 2% exists as frozen water in glaciers, icebergs, permafrost, etc.",
-      "image":"https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg"
+      "fact": "Less than 1% of the water supplies found on Earth are usable by people. 97% of water is found in the oceans and 2% exists as frozen water in glaciers, icebergs, permafrost, etc.",
+      "image": "https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_1280.jpg"
     },
     {
       "id": 5,
-      "fact":"Of the 1,200 or more known species of bats that exist, not a single species is blind.",
-      "image":"https://cdn.pixabay.com/photo/2017/04/17/11/01/flying-foxes-2237213__480.jpg"
+      "fact": "Of the 1,200 or more known species of bats that exist, not a single species is blind.",
+      "image": "https://cdn.pixabay.com/photo/2017/04/17/11/01/flying-foxes-2237213__480.jpg"
     },
     {
       "id": 6,
-      "fact":"Automatic dishwashers use about 6 gallons of hot water per cycle (over 2,000 gallons per year), which is actually less than the water required to do dishes by hand",
-      "image":"https://www.thespruce.com/thmb/lC9gu1h01hJ-9QZoEHcgEyWieHQ=/4449x3337/smart/filters:no_upscale()/dishwasher-mistakes-and-how-to-avoid-them-1901143_01-3d1f4ada89a34cb0a3d1733fe520c9dc.jpg"
+      "fact": "Automatic dishwashers use about 6 gallons of hot water per cycle (over 2,000 gallons per year), which is actually less than the water required to do dishes by hand",
+      "image": "https://www.thespruce.com/thmb/lC9gu1h01hJ-9QZoEHcgEyWieHQ=/4449x3337/smart/filters:no_upscale()/dishwasher-mistakes-and-how-to-avoid-them-1901143_01-3d1f4ada89a34cb0a3d1733fe520c9dc.jpg"
     },
     {
       "id": 7,
-      "fact":"The combined weight of the 100 trillion ants on Earth is greater than the combined weight of all 7 billion humans.",
-      "image":"https://cdn.pixabay.com/photo/2016/05/25/13/49/peony-1414875__480.jpg"
+      "fact": "The combined weight of the 100 trillion ants on Earth is greater than the combined weight of all 7 billion humans.",
+      "image": "https://cdn.pixabay.com/photo/2016/05/25/13/49/peony-1414875__480.jpg"
     },
     {
       "id": 8,
-      "fact":"Each day, American businesses generate enough paper to circle the Earth 20 times!",
-      "image":"https://cdn.pixabay.com/photo/2016/11/22/14/23/paper-1849364__480.jpg"
+      "fact": "Each day, American businesses generate enough paper to circle the Earth 20 times!",
+      "image": "https://cdn.pixabay.com/photo/2016/11/22/14/23/paper-1849364__480.jpg"
     }
-
   ]
 }
