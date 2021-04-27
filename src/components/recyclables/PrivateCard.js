@@ -16,7 +16,7 @@ export const PrivateCard = ({recyclable, handleDeleteRecyclable}) => {
                 <p><strong>Instructions: </strong> {recyclable.recyclable.instruction}</p>
                 <p><strong>Notes:</strong>{recyclable.userNotes}</p>
             </div>
-            <Link to={`/yourList/${recyclable.recyclableId}/edit`}>
+            <Link to={`/yourList/${recyclable.id}/edit`}>
                     <button>Edit Notes</button>
                 </Link>
             <button type="button" className="button" onClick={() => handleDeleteRecyclable(recyclable.id)}>Delete</button>

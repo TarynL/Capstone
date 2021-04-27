@@ -28,19 +28,19 @@ export const deleteRecyclable = (id) => {
     }).then(response => response.json())
   }
 
-  export const updateRecyclable = (editedRecyclable) => {
-    console.log(editedRecyclable.recyclableId)
-    return fetch(`${remoteURL}/lists?${editedRecyclable.recyclableId}&_expand=recyclable`, {
+  export const updateRecyclable = (editedRec) => {
+    // console.log(editedRecyclable.recyclableId)
+    return fetch(`${remoteURL}/lists/${editedRec.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(editedRecyclable)
+      body: JSON.stringify(editedRec)
     }).then(data => data.json());
   }
 
-  export const getRecyclableById = (recyclableId) => {
+  export const getRecyclableById = (id) => {
     
-    return fetch (`${remoteURL}/lists?recyclableId=${recyclableId}&_expand=recyclable`)
+    return fetch (`${remoteURL}/lists/${id}`)
     .then (result => result.json())
   }
