@@ -18,7 +18,7 @@ export const ApplicationViews = () => {
                 <PrivateList />
             </Route>
             
-            <Route path="/yourList/:recyclableId(\d+)/edit">
+            <Route exact path="/yourList/:recyclableId(\d+)/edit">
                 <PrivateEdit />
             </Route>
 
