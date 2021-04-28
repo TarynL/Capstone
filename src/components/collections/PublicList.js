@@ -1,76 +1,68 @@
 import React, { useState, useEffect } from 'react';
 import { PublicCard } from './PublicCard';
-import { getAllRecyclables, addToList, getSingleCyc } from '../../modules/PublicListManager';
-import {useHistory} from 'react-router-dom'
-// import {getRecyclableById} from '../../modules/PrivateListManager'
+import { getAllRecyclables, addToList } from '../../modules/PublicListManager';
+import { useHistory } from 'react-router-dom'
 
 
-export const PublicList = () => {
+
+export const PublicList = ({ id }) => {
 
     const [publics, setPublics] = useState([]);
     const history = useHistory();
-    
-    // const { recyclableId } = useParams(); 
+
+
 
     const currentUser = sessionStorage.getItem("recyclePedia_user")
 
     const getPublicRecyclables = () => {
-        
+
         return getAllRecyclables()
             .then(res => {
                 setPublics(res)
             });
     };
 
-    
-   
-    const handleAddToList = (evt,id) => {
-      evt.preventDefault()
-      getSingleCyc() 
-       
-        // setIsLoading(false)
+
+
+    const handleAddToList = (recyclableId) => {
+
         const newRec = {
             userId: parseInt(currentUser),
-            recyclableId: id,
+            recyclableId: recyclableId,
             userNotes: ""
-            
         }
-        // newRec[evt.target.id] = evt.target.value
+
         console.log(newRec)
         addToList(newRec)
-        .then(() => history.push("/collections"))
-      
+        // add an alert 
     }
-    
-    
+
+
 
     useEffect(() => {
         getPublicRecyclables();
     }, []);
 
-    // useEffect(() => {
-    //     getSingleCyc()
-        
-    // }, [])
-    
+
+
 
     return (
-        <> 
-        <button type="button"
-                    className="button"
-                    onClick={() => { history.push("/collections/create") }}>
-                    Add a New Recyclable
+        <>
+            <button type="button"
+                className="button"
+                onClick={() => { history.push("/collections/create") }}>
+                Add a New Recyclable
             </button>
-           
+
             <div className="container-cards">
                 {publics.map(cyc =>
-                    < PublicCard 
+                    < PublicCard
                         key={cyc.id}
                         recyclable={cyc}
-                        handleAddToList = {handleAddToList}
+                        handleAddToList={handleAddToList}
 
 
-                        
+
                     />)}
             </div>
         </>

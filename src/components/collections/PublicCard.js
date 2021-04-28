@@ -10,10 +10,10 @@ export const PublicCard = ({ recyclable, handleAddToList }) => {
             <div className="card">
                 <div className="card-content">
                     <h3>{recyclable.title}</h3>
-                    <img className="recyclableImage" src={recyclable.image} alt="recyclable" />
+                    <img className="recyclableImage img-fluid" src={recyclable.image} alt="recyclable" />
                     <p><strong>Instructions: </strong> {recyclable.instruction}</p>
                     <button className="button"
-                        onClick={handleAddToList}>
+                        onClick={() => handleAddToList(recyclable.id)}>
                         Add
                     </button>
                 </div>

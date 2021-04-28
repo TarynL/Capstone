@@ -30,6 +30,9 @@ export const Home = () => {
                     {factSpotlightId && <FactSpotlight factId={factSpotlightId} />}
                     <button className="button" onClick={nextSpotlightFact}>Another Fact</button>
                 </div>
+                <div className="homeRec item5">
+                    <div className="recDay">Recycle Day</div>
+                </div>
 
 
                 <div className="item3 locationHighlight">
