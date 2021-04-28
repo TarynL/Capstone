@@ -40,7 +40,7 @@
       "id": 3,
       "title": "Soup Can",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_pyPgkdg8Y0SGDpgsRJetlTbSHHzm_dAw26YxY-ibNkrWqDeY2ToG9PDEfZ24b-28aX7qBk&usqp=CAc",
-      "instruction": "All contents removed. Rinse thoroughly. Remove label and throw in trash. Place lid inside of can.",
+      "instruction": "All contents removed. Rinse thoroughly. Remove label and throw in trash.",
       "recycle": true
     },
     {
@@ -62,7 +62,7 @@
       "id": 2,
       "userId": 1,
       "recyclableId": 3,
-      "userNotes": ""
+      "userNotes": "Place lid inside of can."
     },
     {
       "id": 3,

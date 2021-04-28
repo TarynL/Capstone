@@ -7,19 +7,6 @@ const currentUser = sessionStorage.getItem("recyclePedia_user")
 export const getMyRecyclables = () => {
     return fetch(`${remoteURL}/lists?userId=${currentUser}&_expand=recyclable`)
     .then (result => result.json())
-};
-
-
-
-export const addToList = (listObj) => {
-    return fetch(`${remoteURL}/lists`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(listObj)
-    })
-    .then(response => response.json())
 }
 
 export const deleteRecyclable = (id) => {
