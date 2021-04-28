@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { PrivateCard } from './PrivateCard';
-import { getMyRecyclables, deleteRecyclable } from '../../modules/PrivateListManager';
+import { getMyRecyclables, deleteRecyclable} from '../../modules/PrivateListManager';
 import {useHistory} from 'react-router-dom'
 
 export const PrivateList = () => {
 
     const [privates, setPrivates] = useState([]);
     const history = useHistory();
+    const [isLoading, setIsLoading] = useState(true);
+
+    
 
     const getRecyclables = () => {
         return getMyRecyclables()
             .then(res => {
                 setPrivates(res)
+                setIsLoading(false)
             });
     };
     
@@ -24,12 +28,14 @@ export const PrivateList = () => {
 
     }
 
+    
+
     useEffect(() => {
         getRecyclables();
     }, []);
 
     
-
+    if (isLoading === false) {
     return (
         <> 
             
@@ -43,4 +49,7 @@ export const PrivateList = () => {
             </div>
         </>
     )
+}else {
+    return null;
+}
 }

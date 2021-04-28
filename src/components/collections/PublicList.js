@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { PublicCard } from './PublicCard';
-import { getAllRecyclables } from '../../modules/PublicListManager';
+import { getAllRecyclables, addToList, getSingleCyc } from '../../modules/PublicListManager';
 import {useHistory} from 'react-router-dom'
+// import {getRecyclableById} from '../../modules/PrivateListManager'
+
 
 export const PublicList = () => {
 
     const [publics, setPublics] = useState([]);
     const history = useHistory();
+    
+    // const { recyclableId } = useParams(); 
+
+    const currentUser = sessionStorage.getItem("recyclePedia_user")
 
     const getPublicRecyclables = () => {
         
@@ -15,7 +21,26 @@ export const PublicList = () => {
                 setPublics(res)
             });
     };
+
     
+   
+    const handleAddToList = (evt,id) => {
+      evt.preventDefault()
+      getSingleCyc() 
+       
+        // setIsLoading(false)
+        const newRec = {
+            userId: parseInt(currentUser),
+            recyclableId: id,
+            userNotes: ""
+            
+        }
+        // newRec[evt.target.id] = evt.target.value
+        console.log(newRec)
+        addToList(newRec)
+        .then(() => history.push("/collections"))
+      
+    }
     
     
 
@@ -23,6 +48,10 @@ export const PublicList = () => {
         getPublicRecyclables();
     }, []);
 
+    // useEffect(() => {
+    //     getSingleCyc()
+        
+    // }, [])
     
 
     return (
@@ -34,10 +63,13 @@ export const PublicList = () => {
             </button>
            
             <div className="container-cards">
-                {publics.map(recyclable =>
+                {publics.map(cyc =>
                     < PublicCard 
-                        key={recyclable.id}
-                        recyclable={recyclable}
+                        key={cyc.id}
+                        recyclable={cyc}
+                        handleAddToList = {handleAddToList}
+
+
                         
                     />)}
             </div>

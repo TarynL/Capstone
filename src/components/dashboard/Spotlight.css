@@ -1,0 +1,41 @@
+/* .location-spotlight {
+    max-width: 400px;
+    display: flex;
+    border: 1px solid #a7b3a5;
+    padding: 10px;
+    margin: 10px;
+  } */
+
+.locationBlock {
+    border: 5px solid #a7b3a5;
+    background-color: white;
+    padding: 2px;
+  }
+
+.fact-spotlight {
+    max-width: 400px;
+    display: flex;
+    border: 1px solid #a7b3a5;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+.fact-spotlight img {
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+.fact-spotlight p {
+    color: black;
+  }
+
+.factImage{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+
+.tipsList{
+  background-color: white;
+}

@@ -1,0 +1,131 @@
+h1 {
+    font-family:  'Expletus Sans', cursive;}
+
+body {
+        font-family:  'Forum', cursive;
+      }
+
+.title{
+
+    padding: 8px;
+    font-weight: bold;
+}
+
+.Highlight{
+    border: 1px solid black;
+    width: 100%;
+    height: 220px;
+    padding: 8px;
+}
+
+.locationHighlight{
+    border: 1px solid black;
+    width: 60%;
+    height: 600px;
+    padding: 8px;
+    overflow: scroll;
+    background-color:  #a7b3a5;
+    
+}
+.factHighlight {
+    
+    width: 80%;
+    height: 500px;
+    padding: 2px;
+
+}
+.tipsHighlight{
+    border: 1px solid black;
+    width: 60%;
+    height: 600px;
+    padding: 8px;
+    overflow: scroll;
+    background-color:  #a7b3a5;
+    
+}
+/* .headerLocation {
+    
+} */
+
+
+
+.dashboard{
+    display: flex;
+
+}
+
+
+.buttonBox{
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 15px;
+  }
+
+.item1{
+    grid-column-start: 1; 
+    grid-column-end: 1;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.item2{
+    grid-row: 2 / 2;
+    grid-column-start: 2; 
+    grid-column-end: 2;
+}
+
+.item3{
+    grid-row: 2 / 2;
+    grid-column-start: 1; 
+    grid-column-end: 1;
+}
+
+.item4{
+    grid-row: 2 / 2;
+    grid-column-start: 3; 
+    grid-column-end: 3;
+}  
+
+
+
+
+.header{
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+}
+
+
+
+.button {
+   background-color: white;
+    border: black 2px solid;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: .5em;
+    border-radius: 2px;
+    margin: .5em;
+    width: 120px;
+  }
+  
+  button:hover {
+    background-color: #a7b3a5;
+    color: white
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .locationBlock {
+    border: 1px solid black;
+    background-color: white;
+      }
