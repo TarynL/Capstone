@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { PublicCard } from './PublicCard';
-import { getAllRecyclables, addToList, getSingleCyc } from '../../modules/PublicListManager';
+import { getAllRecyclables, addToList } from '../../modules/PublicListManager';
 import {useHistory} from 'react-router-dom'
 // import {getRecyclableById} from '../../modules/PrivateListManager'
 
 
-export const PublicList = () => {
+export const PublicList = ({id}) => {
 
     const [publics, setPublics] = useState([]);
     const history = useHistory();
+   
     
     // const { recyclableId } = useParams(); 
 
@@ -24,21 +25,20 @@ export const PublicList = () => {
 
     
    
-    const handleAddToList = (evt,id) => {
-      evt.preventDefault()
-      getSingleCyc() 
-       
-        // setIsLoading(false)
+    const handleAddToList = (recyclableId) => {
+        
+
+        
         const newRec = {
             userId: parseInt(currentUser),
-            recyclableId: id,
+            recyclableId: recyclableId,
             userNotes: ""
             
         }
-        // newRec[evt.target.id] = evt.target.value
+        
         console.log(newRec)
         addToList(newRec)
-        .then(() => history.push("/collections"))
+        // add an alert 
       
     }
     
@@ -48,10 +48,7 @@ export const PublicList = () => {
         getPublicRecyclables();
     }, []);
 
-    // useEffect(() => {
-    //     getSingleCyc()
-        
-    // }, [])
+   
     
 
     return (

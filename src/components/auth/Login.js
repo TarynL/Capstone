@@ -30,7 +30,6 @@ export const Login = () => {
         existingUserCheck()
             .then(exists => {
                 if (exists) {
-        
                     sessionStorage.setItem("recyclePedia_user", exists.id)
                     history.push("/")
                 } else {

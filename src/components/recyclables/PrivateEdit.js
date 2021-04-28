@@ -53,7 +53,7 @@ export const PrivateEdit = () => {
 
         });
 
-    }, []);
+    }, [recyclableId]);
 
 
     // if (isLoading === false) {
