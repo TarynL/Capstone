@@ -26,8 +26,14 @@ export const deleteRecyclable = (id) => {
     }).then(data => data.json());
   }
 
-  export const getRecyclableById = (id) => {
-    
-    return fetch (`${remoteURL}/lists/${id}`)
-    .then (result => result.json())
+  // export const getCycById = (id) => {
+  //   console.log(id)
+  //   return fetch (`${remoteURL}/lists/${id}`)
+  //   .then (result => result.json())
+  // }
+
+  export const getCycById = (id) => {
+
+    return fetch(`${remoteURL}/lists/${id}`)
+    .then (res => res.json())
   }

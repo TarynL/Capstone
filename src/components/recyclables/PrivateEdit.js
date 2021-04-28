@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { updateRecyclable, getRecyclableById } from "../../modules/PrivateListManager";
+import { updateRecyclable, getCycById } from "../../modules/PrivateListManager";
 import "./Private.css";
 import { useHistory, useParams } from 'react-router-dom';
 
 
 export const PrivateEdit = () => {
-    const [rec, setRec] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [recyclable, setRecyclable] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     const { recyclableId } = useParams();
     const history = useHistory();
@@ -15,40 +15,42 @@ export const PrivateEdit = () => {
 
     const handleFieldChange = (event) => {
 
-        const stateToChange = { ...rec };
+        const stateToChange = { ...recyclable };
 
         let editVal = event.target.value;
         if (event.target.id.includes("Id")) {
             editVal = parseInt(editVal);
         }
+        
         // target the id off of the expansion
         //    let formType = event.target.id
         //  stateToChange.recyclable[formType] = editVal;
         stateToChange[event.target.id] = editVal
-        setRec(stateToChange);
+        setRecyclable(stateToChange);
     };
 
-    const updateExistingRecyclable = (event) => {
+    const updateExistingRecyclable = event => {
         event.preventDefault();
         setIsLoading(true);
 
 
         const editedRec = {
-            id: recyclableId,
-            userId: rec.userId,
-            recyclableId: rec.recyclableId,
-            userNotes: rec.userNotes
+            id: recyclable.id,
+            userId: recyclable.userId,
+            recyclableId: recyclable.recyclableId,
+            userNotes: recyclable.userNotes
         };
+        console.log(editedRec)
         updateRecyclable(editedRec)
             .then(() => history.push("/yourList"))
     }
 
     useEffect(() => {
 
-        getRecyclableById(recyclableId)
+        getCycById(recyclableId)
         .then(res => {
 
-            setRec(res);
+            setRecyclable(res);
             setIsLoading(false)
 
         });
@@ -56,7 +58,7 @@ export const PrivateEdit = () => {
     }, [recyclableId]);
 
 
-    // if (isLoading === false) {
+    if (isLoading === false) {
         return (
 
             <form className="newForm">
@@ -64,19 +66,19 @@ export const PrivateEdit = () => {
                 <fieldset>
                     <div className="form-group">
                         <label htmlFor="edit_userNotes">Note: </label>
-                        <input type="text" id="userNotes" onChange={handleFieldChange} required className="form-control" value={rec.userNotes} />
+                        <input type="text" id="userNotes" onChange={handleFieldChange} required className="form-control" value={recyclable.userNotes} />
                     </div>
                 
                 </fieldset>
                 <button className="button"
-                    disabled={isLoading}
+                    // disabled={isLoading}
                     onClick={updateExistingRecyclable}>
                     Save
               </button>
             </form>)
-    // } else {
-    //     return null;
-    // }
+    } else {
+        return null;
+    }
 
 
 

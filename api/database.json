@@ -58,28 +58,16 @@
   ],
   "lists": [
     {
-      "id": 2,
-      "userId": 2,
-      "recyclableId": 3,
-      "userNotes": "Place lid inside of can."
-    },
-    {
-      "id": 3,
-      "userId": 2,
-      "recyclableId": 3,
-      "userNotes": ""
+      "id": 1,
+      "userId": 1,
+      "recyclableId": 1,
+      "userNotes": "woohoo"
     },
     {
       "userId": 1,
       "recyclableId": 2,
       "userNotes": "",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "recyclableId": 4,
-      "userNotes": "",
-      "id": 6
+      "id": 2
     }
   ],
   "facts": [
