@@ -53,6 +53,7 @@ export const PublicForm = () => {
 				onClick={handleClickSaveRecyclable}>
 				Save Recyclable
           </button>
+          <button type="cancel" className="button" onClick={() => history.push(`/collections`)} > Cancel </button>
     </form>
     )
 

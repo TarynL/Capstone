@@ -75,6 +75,7 @@ export const PrivateEdit = () => {
                     onClick={updateExistingRecyclable}>
                     Save
               </button>
+              <button type="cancel" className="button" onClick={() => history.push(`/yourList`)} > Cancel </button>
             </form>)
     } else {
         return null;

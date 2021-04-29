@@ -40,12 +40,14 @@ export const PrivateList = () => {
         <> 
             
             <div className="container-cards">
+                {/* <div className="row"> */}
                 {privates.map(recyclable =>
                     <PrivateCard
                         key={recyclable.id}
                         recyclable={recyclable}
                         handleDeleteRecyclable={handleDeleteRecyclable}
                     />)}
+                    {/* </div> */}
             </div>
         </>
     )
