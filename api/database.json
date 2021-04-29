@@ -58,14 +58,14 @@
   ],
   "lists": [
     {
-      "id": 1,
       "userId": 1,
-      "recyclableId": 1,
-      "userNotes": "woohoo"
+      "recyclableId": 2,
+      "userNotes": "",
+      "id": 1
     },
     {
       "userId": 1,
-      "recyclableId": 2,
+      "recyclableId": 1,
       "userNotes": "",
       "id": 2
     }

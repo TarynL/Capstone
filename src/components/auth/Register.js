@@ -23,6 +23,7 @@ export const Register = () => {
             .then(res => res.json())
             .then(user => !!user.length)
     }
+   
 
     const handleRegister = (e) => {
         e.preventDefault()
@@ -54,6 +55,7 @@ export const Register = () => {
             })
 
     }
+    
 
     return (
         <main style={{ textAlign: "center" }}>
@@ -85,6 +87,9 @@ export const Register = () => {
                 </fieldset>
                 <fieldset className="submitButtonSection">
                     <button type="submit" className="registerButton"> Sign in </button>
+                </fieldset>
+                <fieldset className="cancelButtonSection">
+                    <button type="cancel" className="registerButton" onClick={() => history.push(`/login`)} > Cancel </button>
                 </fieldset>
                 
             </form>

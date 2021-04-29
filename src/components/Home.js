@@ -29,9 +29,12 @@ export const Home = () => {
                     <h3 className="header headerFact">Environmental Facts</h3>
                     {factSpotlightId && <FactSpotlight factId={factSpotlightId} />}
                     <button className="button" onClick={nextSpotlightFact}>Another Fact</button>
-                </div>
-                <div className="homeRec item5">
-                    <div className="recDay">Recycle Day</div>
+                    <div className="recDay">
+                        <h3>Recycle Day Reminder</h3>
+
+                        <h5>First tuesday of the month</h5>
+                        </div>
+                    
                 </div>
 
 
