@@ -19,11 +19,6 @@
       "email": "earl@earl.com",
       "name": "Earl earl",
       "id": 4
-    },
-    {
-      "email": "bobby@bob.com",
-      "name": "Bobby Grant",
-      "id": 5
     }
   ],
   "recyclables": [
@@ -110,11 +105,18 @@
       "instruction": "Empty contents. Rinse thoroughly",
       "recycle": true,
       "id": 12
+    },
+    {
+      "title": "test",
+      "image": "test",
+      "instruction": "test",
+      "recycle": true,
+      "id": 13
     }
   ],
   "lists": [
     {
-      "userId": 4,
+      "userId": 1,
       "recyclableId": 1,
       "userNotes": "",
       "id": 1

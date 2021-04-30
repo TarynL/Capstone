@@ -71,7 +71,7 @@ export const PublicList = () => {
     }
     const handleDeleteFromList = (id) => {
        deleteRecyclable(id)
-       .then (() => getAllMyRecyclables())
+       .then (() => getAllMyRecyclables(id))
         
     }
 
