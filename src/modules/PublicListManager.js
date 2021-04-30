@@ -8,7 +8,7 @@ export const getAllRecyclables = () => {
 }
 
 export const getSingleCyc = (id) => {
-    return fetch(`${remoteURL}/recyclables?${id}`)
+    return fetch(`${remoteURL}/recyclables/${id}`)
     .then(res => res.json())
 };
 
@@ -36,4 +36,11 @@ export const addToList = (listObj) => {
     .then(response => response.json())
 }
 
+export const deleteRecyclable = (id) => {
+    return fetch(`${remoteURL}/lists/${id}`, {
+      method: "DELETE"
+    }).then(response => response.json())
+  }
+
+  
 
