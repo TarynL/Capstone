@@ -1,5 +1,6 @@
 const remoteURL = "http://localhost:8088"
 
+
 export const getFactById = (id) => {
    return fetch(`${remoteURL}/facts/${id}`)
     .then(res => res.json())

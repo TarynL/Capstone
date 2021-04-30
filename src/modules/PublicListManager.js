@@ -36,4 +36,9 @@ export const addToList = (listObj) => {
     .then(response => response.json())
 }
 
+export const deleteRecyclable = (id) => {
+    return fetch(`${remoteURL}/lists/${id}`, {
+      method: "DELETE"
+    }).then(response => response.json())
+  }
 
