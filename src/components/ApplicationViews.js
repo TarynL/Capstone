@@ -6,6 +6,7 @@ import { PublicList } from "./collections/PublicList"
 import { Home } from "./Home"
 import { PrivateEdit } from "./recyclables/PrivateEdit"
 
+// parent component that renders and routes all child components
 export const ApplicationViews = () => {
     return (
         <>

@@ -2,6 +2,11 @@ import React from 'react';
 import './Private.css'
 import { useHistory } from "react-router-dom";
 
+
+// component for private list cards
+// deconstructs the props so the dom can render each value 
+// edit button event listener on the OnClick pushes to edit page
+// delete button event listener on the OnClick runs delete function to remove from dom&database
 export const PrivateCard = ({ recyclable, handleDeleteRecyclable }) => {
     const history = useHistory();
 

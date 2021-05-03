@@ -5,21 +5,26 @@ import { FactSpotlight } from "../components/dashboard/FactSpotlight";
 import { LocationSpotlight } from "../components/dashboard/LocationsSpotlight"
 import { TipsSpotlight } from './dashboard/TipsSpotlight';
 
+// export a function for rendering the home page component 
+// declare a new state variable
+// declare a function for the fact spotlight
+// get randomFact fetch call and then set the state
+// use Effect hook for calling nextFact function
 
 export const Home = () => {
+
     const [factSpotlightId, setFactId] = useState(0);
-    // const [isLoading, setIsLoading] = useState(true)
 
     const nextSpotlightFact = () => {
-
         getRandomFact().then(setFactId);
-        // setIsLoading(false)
     };
 
     useEffect(() => {
         nextSpotlightFact();
     }, []);
 
+
+    // what will first render on page and re-render everytime the state changes
     return (
         <>
 
@@ -33,8 +38,8 @@ export const Home = () => {
                         <h3>Recycle Day Reminder</h3>
 
                         <h5>First tuesday of the month</h5>
-                        </div>
-                    
+                    </div>
+
                 </div>
 
 

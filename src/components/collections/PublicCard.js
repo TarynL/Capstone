@@ -1,24 +1,37 @@
 import React, { useEffect, useState } from 'react';
-import {getMyRecyclables} from "../../modules/PrivateListManager"
-// import { getSingleCyc } from '../../modules/PublicListManager';
+import { getMyRecyclables } from "../../modules/PrivateListManager"
 import './Public.css'
 
 
-export const PublicCard = ({  recyclable, handleAddToList, handleDeleteFromList, isSelected}) => {
-   const [userCyc, setUserCyc] = useState([])
+export const PublicCard = ({ recyclable, handleAddToList, handleDeleteFromList, isSelected }) => {
+    const [userCyc, setUserCyc] = useState([])
     const [selected, setSelected] = useState(isSelected);
+    const [isLoading, setLoading] = useState(true)
 
-const toggleSelected = (evt) => {
-    console.log(evt)
-    if (selected === true){ setSelected(false)}
-    else{ setSelected(true)}
-}
+    const toggleSelected = (evt) => {
+        console.log(evt)
+        if (selected === true) { setSelected(false) }
+        else { setSelected(true) }
+    }
 
 
-useEffect(() => {
-    getMyRecyclables()
-    .then(res => setUserCyc(res))
-}, [])
+    
+
+    const getNewRecyc = () => {
+        getMyRecyclables()
+        .then(res => setUserCyc(res))
+    }
+
+
+
+
+    useEffect(() => {
+        
+        if (userCyc[0] !== undefined) {
+        let foundRecyc = userCyc.find(trashId => trashId.recyclableId === recyclable.id)
+        handleDeleteFromList(foundRecyc.id)}
+    }, [userCyc])
+
 
 
     return (
@@ -30,16 +43,16 @@ useEffect(() => {
                     <h3>{recyclable.title}</h3>
                     <img className="recyclableImage img-fluid" src={recyclable.image} alt="recyclable" />
                     <p><strong>Instructions: </strong> {recyclable.instruction}</p>
-                    {/* {console.log(userCyc.find(trashId => trashId.recyclableId === recyclable.id))} */}
+
                     <div className="toggle-container" required onClick={toggleSelected} >
-                        <div value={recyclable.id} className={`dialog-button ${selected ? "" : "disabled"}` } required 
-                            onClick={selected ? () => handleDeleteFromList(recyclable.id) : () => handleAddToList(recyclable.id)}  >
+                        <div className={`dialog-button ${selected ? "" : "disabled"}`} required 
+                            onClick={selected ? () => getNewRecyc() : () => handleAddToList(recyclable.id)}  >
                             {selected ? "Remove" : "Add"}
                         </div>
                     </div>
 
 
-    
+
 
 
                 </div>

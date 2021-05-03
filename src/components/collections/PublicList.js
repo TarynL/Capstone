@@ -95,8 +95,9 @@ export const PublicList = () => {
                 </button>
 
                 <form id="form">
-                    <input type="text" required placeholder="Search for Recyclable..."
-                        onChange={handleSearch} />
+                  
+                <input type="text"  required placeholder="Search for Recyclable..."
+                        onChange={handleSearch}/>
                 </form>
 
                 <div className="container cards">
