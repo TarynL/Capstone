@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { RecyclePedia} from './components/RecyclePedia'
 
+//entry file that runs the main component
 ReactDOM.render(
   <React.StrictMode>
     <Router>

@@ -105,23 +105,9 @@
       "instruction": "Empty contents. Rinse thoroughly",
       "recycle": true,
       "id": 12
-    },
-    {
-      "title": "test",
-      "image": "test",
-      "instruction": "test",
-      "recycle": true,
-      "id": 13
     }
   ],
-  "lists": [
-    {
-      "userId": 1,
-      "recyclableId": 1,
-      "userNotes": "",
-      "id": 1
-    }
-  ],
+  "lists": [],
   "facts": [
     {
       "id": 1,

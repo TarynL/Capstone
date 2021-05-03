@@ -7,6 +7,8 @@ import { Register } from "./auth/Register"
 import { Footer } from "./nav/Footer"
 import "./RecyclePedia.css"
 
+
+// component that runs applicationViews, Navbar, Footer if user is loggedIn
 export const RecyclePedia = () => (
     <>
     <Route

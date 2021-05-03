@@ -1,22 +1,25 @@
+// variable for json server local host 
 const remoteURL = "http://localhost:8088"
 
+// variable for logged-in user 
 const currentUser = sessionStorage.getItem("recyclePedia_user")
 
-
-
+// fetch call for loggedIn users list of recyclables and expand on each recyclable 
 export const getMyRecyclables = () => {
     return fetch(`${remoteURL}/lists?userId=${currentUser}&_expand=recyclable`)
     .then (result => result.json())
 }
 
+// fetch call for recyclables by id to be deleted 
 export const deleteRecyclable = (id) => {
     return fetch(`${remoteURL}/lists/${id}`, {
       method: "DELETE"
     }).then(response => response.json())
   }
 
+  // fetch call for recyclables by it to be edited 
   export const updateRecyclable = (editedRec) => {
-    // console.log(editedRecyclable.recyclableId)
+   
     return fetch(`${remoteURL}/lists/${editedRec.id}`, {
       method: "PUT",
       headers: {
@@ -26,14 +29,8 @@ export const deleteRecyclable = (id) => {
     }).then(data => data.json());
   }
 
-  // export const getCycById = (id) => {
-  //   console.log(id)
-  //   return fetch (`${remoteURL}/lists/${id}`)
-  //   .then (result => result.json())
-  // }
-
+  // fetch call for get private list obj by id
   export const getCycById = (id) => {
-
     return fetch(`${remoteURL}/lists/${id}`)
     .then (res => res.json())
   }
