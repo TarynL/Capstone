@@ -6,7 +6,7 @@ import './Public.css'
 export const PublicCard = ({ recyclable, handleAddToList, handleDeleteFromList, isSelected }) => {
     const [userCyc, setUserCyc] = useState([])
     const [selected, setSelected] = useState(isSelected);
-    const [isLoading, setLoading] = useState(true)
+    
 
     const toggleSelected = (evt) => {
         console.log(evt)
@@ -51,24 +51,10 @@ export const PublicCard = ({ recyclable, handleAddToList, handleDeleteFromList, 
                         </div>
                     </div>
 
-
-
-
-
                 </div>
             </div>
         </>
     )
 }
-
-// PublicCard.propTypes = {
-//        selected: PropTypes.bool.isRequired,
-//        toggleSelected: PropTypes.func.isRequired}
-
-/* <button className="button"
-
-onClick={() => handleAddToYourList(recyclable.id)}>
-Add
-</button> */
 
 

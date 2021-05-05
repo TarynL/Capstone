@@ -95,9 +95,9 @@ export const PublicList = () => {
                 </button>
 
                 <form id="form">
-                  
+                <i class="bi bi-search"></i> 
                 <input type="text"  required placeholder="Search for Recyclable..."
-                        onChange={handleSearch}/>
+                        onChange={handleSearch} />
                 </form>
 
                 <div className="container cards">

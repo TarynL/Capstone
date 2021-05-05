@@ -107,7 +107,20 @@
       "id": 12
     }
   ],
-  "lists": [],
+  "lists": [
+    {
+      "userId": 1,
+      "recyclableId": 5,
+      "userNotes": "",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "recyclableId": 4,
+      "userNotes": "",
+      "id": 2
+    }
+  ],
   "facts": [
     {
       "id": 1,
