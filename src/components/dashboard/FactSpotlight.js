@@ -16,7 +16,11 @@ export const FactSpotlight = ({factId}) => {
     <div className="fact-spotlight">
       <div>
       <img className="factImage img-fluid" src={fact.image} alt="fact"/>
-        <p>{fact.fact}</p>
+       
+      </div>
+      <div className="factText">
+      <h3 className="header headerFact">Environmental Facts</h3> 
+      <p>{fact.fact}</p>
       </div>
     </div>
   );

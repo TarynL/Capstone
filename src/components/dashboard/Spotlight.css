@@ -13,27 +13,34 @@
   }
 
 .fact-spotlight {
-    max-width: 400px;
+    min-width: 600px;
     display: flex;
-    border: 1px solid #a7b3a5;
+    flex-direction: row;
+    
     padding: 10px;
     margin: 10px;
   }
   
 .fact-spotlight img {
-    width: 300px;
+    width: 100%;
     margin-right: 10px;
     margin-bottom: 10px;
   }
   
 .fact-spotlight p {
     color: black;
+    border: 1px solid #a7b3a5;
+    padding: 5px 20px 5px 20px;
+    font-size: 21pt;
+    
+    
   }
 
 .factImage{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+    height: 800px;
+    width: 800px;
+    /* object-fit: cover; */
+    border: solid white 8px;
   }
 
 .tipsList{

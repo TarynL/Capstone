@@ -29,16 +29,21 @@ export const Home = () => {
         <>
 
             <div className="grid-container">
-                <div className="item1 title"><h1>Welcome to RecyclePedia</h1></div>
+                <div className="item1 title">
+                    <div className="header">
+                    <h1>Welcome to RecyclePedia</h1>
+                    <h3>Recycle today for a better tomorrow.</h3>
+                    <p>Learn what you can recycle, how to do it properly and more...</p>
+                    </div></div>
                 <div className="item2 factHighlight">
-                    <h3 className="header headerFact">Environmental Facts</h3>
+                    
                     {factSpotlightId && <FactSpotlight factId={factSpotlightId} />}
                     <button className="button" onClick={nextSpotlightFact}>Another Fact</button>
-                    <div className="recDay">
+                    {/* <div className="recDay">
                         <h3>Recycle Day Reminder</h3>
 
                         <h5>First tuesday of the month</h5>
-                    </div>
+                    </div> */}
 
                 </div>
 

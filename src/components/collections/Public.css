@@ -15,14 +15,15 @@
   }
   
   .recyclableImage img {
-    width: 200px;
-    margin-right: 20px;
+    /* width: 200px; */
+    /* margin-right: 20px; */
     margin-bottom: 10px;
     
   }
   
   .card-content{
     color: black;
+    
    
   }
 
@@ -56,6 +57,7 @@
     min-width: 50px;
     display: flex;
     justify-content: center;
+    
     align-items: center;
     width: 48px;
     min-width: unset;
@@ -71,3 +73,12 @@
     background-color:  #a7b3a5;
     left: 2px;
   }
+
+  .headerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;;
+  }
+
+  
