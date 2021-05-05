@@ -17,3 +17,20 @@ export const getRandomFact = () => {
       return randomFact.id;
     });
 }
+
+// fetch call for tips by id 
+export const getTipById = (id) => {
+  return fetch(`${remoteURL}/tips/${id}`)
+    .then(res => res.json())
+}
+
+// fetch call for randomizing tips 
+export const getRandomTip = () => {
+  return fetch(`${remoteURL}/tips`)
+    .then(result => result.json())
+    .then(tips => {
+      const randomIndex = Math.floor(Math.random() * tips.length);
+      const randomTip = tips[randomIndex];
+      return randomTip.id;
+    });
+}

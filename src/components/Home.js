@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'
 import { getRandomFact } from "../modules/HomeManager";
+import {getRandomTip} from "../modules/HomeManager"
 import { FactSpotlight } from "../components/dashboard/FactSpotlight";
 import { LocationSpotlight } from "../components/dashboard/LocationsSpotlight"
 import { TipsSpotlight } from './dashboard/TipsSpotlight';
@@ -14,13 +15,22 @@ import { TipsSpotlight } from './dashboard/TipsSpotlight';
 export const Home = () => {
 
     const [factSpotlightId, setFactId] = useState(0);
+    const [tipsSpotlightId, setTipsId] = useState(0);
 
     const nextSpotlightFact = () => {
         getRandomFact().then(setFactId);
     };
 
+    const nextSpotlightTip = () => {
+        getRandomTip().then(setTipsId);
+    };
+
     useEffect(() => {
         nextSpotlightFact();
+    }, []);
+
+    useEffect(() => {
+        nextSpotlightTip();
     }, []);
 
 
@@ -48,15 +58,16 @@ export const Home = () => {
                 </div>
 
 
-                <div className="item3 locationHighlight">
+                {/* <div className="item3 locationHighlight">
                     <h3 className="header headerLocation">Drop-off Locations</h3>
                     <LocationSpotlight />
 
-                </div>
+                </div> */}
 
                 <div className="item4 tipsHighlight">
-                    <h3 className="header headerTips">Tips on how to go Zero Waste</h3>
-                    <TipsSpotlight />
+                {tipsSpotlightId && <TipsSpotlight tipId={tipsSpotlightId} />}
+                <button className="button" onClick={nextSpotlightTip}>Another Tip</button>
+                    
 
                 </div>
             </div>
