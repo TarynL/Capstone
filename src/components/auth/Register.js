@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom";
-import logo from "../../images/logo.png"
+import LoginLogo from "../../images/LoginLogo.png"
+import plasticRecyc from "../../images/plasticRecyc.jpeg"
 import "./Login.css"
-import { Footer } from "../nav/Footer"
+// import { Footer } from "../nav/Footer"
 
 
 export const Register = () => {
@@ -23,7 +24,7 @@ export const Register = () => {
             .then(res => res.json())
             .then(user => !!user.length)
     }
-   
+
 
     const handleRegister = (e) => {
         e.preventDefault()
@@ -55,45 +56,55 @@ export const Register = () => {
             })
 
     }
-    
+
 
     return (
-        <main style={{ textAlign: "center" }}>
+        <main style={{ textAlign: "center" }} className="container login">
 
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
                 <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
 
-            <nav className="navbar">
+            {/* <nav className="navbar">
                     <div>
                         <img className="logo" src={logo} alt="logo" />
                     </div>
-                </nav>
+                </nav> */}
+            <div className="left">
+                <form className="form--login" onSubmit={handleRegister}>
+                    <div className="login--logo">
+                        <img className="LoginLogo" src={LoginLogo} alt="LoginLogo" />
+                        <h2>RecyclePedia!</h2>
+                    </div>
+                    <fieldset>
+                        <label htmlFor="firstName"> First Name: </label>
+                        <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
+                    </fieldset>
+                    <fieldset>
+                        <label htmlFor="lastName"> Last Name: </label>
+                        <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
+                    </fieldset>
+                    <fieldset>
+                        <label htmlFor="inputEmail"> Email: </label>
+                        <input type="email" name="email" id="email" className="form-control" placeholder="Email" required value={registerUser.email} onChange={handleInputChange} />
+                    </fieldset>
+                    <div className="registerButtons">
+                    <fieldset className="submitButtonSection">
+                        <button type="submit" className="registerButton"> Sign in </button>
+                    </fieldset>
+                    <fieldset className="cancelButtonSection">
+                        <button type="cancel" className="registerButton" onClick={() => history.push(`/login`)} > Cancel </button>
+                    </fieldset>
+                    </div>
 
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register to RecyclePedia</h1>
-                <fieldset>
-                    <label htmlFor="firstName"> First Name: </label>
-                    <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="lastName"> Last Name: </label>
-                    <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="inputEmail"> Email: </label>
-                    <input type="email" name="email" id="email" className="form-control" placeholder="Email" required value={registerUser.email} onChange={handleInputChange} />
-                </fieldset>
-                <fieldset className="submitButtonSection">
-                    <button type="submit" className="registerButton"> Sign in </button>
-                </fieldset>
-                <fieldset className="cancelButtonSection">
-                    <button type="cancel" className="registerButton" onClick={() => history.push(`/login`)} > Cancel </button>
-                </fieldset>
-                
-            </form>
-            <Footer />
+                </form>
+            </div>
+
+            <div className="right ">
+                <img className="background-image" src={plasticRecyc} alt="login" />
+            </div>
+            {/* <Footer /> */}
         </main>
     )
 }

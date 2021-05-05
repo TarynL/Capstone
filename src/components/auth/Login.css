@@ -1,33 +1,34 @@
-.dialog {
+ .login{
+   display:flex;
+   justify-content: space-between;
+   position: fixed;
+   margin: 0;
+   padding: 0;
+   height: 800px;
+   min-width: 800px;
+ }
+
+ /* h1, h3 {
+      margin-left: 1rem;
+
+  } */
+ .dialog {
     min-width: 15rem;
     min-height: 5rem;
   }
-  .container-login {
-    text-align: center;
-  }
-
-  h1, h3 {
-      margin-left: 1rem;
-
-  }
+  
+  
   
   fieldset {
     min-width: 0;
-    padding: 1rem 0;
+    padding: .5rem 0;
     margin-left: 1rem;
     border: 0;
 }
 
-  .loginButton{
-    /* background-color: #a7b3a5;
-    border: solid 2px black;
-    margin: 5px; */
-  }
+  
   
   .link--register{
-    
-    color:black;
-    
     margin: 5px;
     width: fit-content;
   }
@@ -36,6 +37,7 @@
     display: block;
     width: 200px;
     background-clip: padding-box;
+    border-color: #b56357;
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     
@@ -47,15 +49,73 @@
 
   }
   
-  .form--login{
-    text-align: left;
-    background-position-x:center;
-    background-size: cover;
-    background-image: url(plastic.jpg);
-    z-index: 1;
-    min-height: 70rem;
-    min-width: 70rem;
+ 
+ 
+
+  /* .background-image {
+
+     background-position-x:right;
+    background-size:; */
+    /* background-image: url(plastic.jpg);*/
+    /* z-index: 1;
     background-color: rgba(255, 255, 255, 0.815);
     background-blend-mode:overlay;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
+  } */
+  .linkRegister{
+    color:#b56357;
+  }
+  .linkRegister:hover{
+    color:#a7b3a5;
+  }
+
+  .LoginLogo {
+    height: 80px;
+    width: 80px;
+    
+    
+
+  }
+  .login--logo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 15rem;
+    align-items: center;
+    /* border: solid  5px red; */
+    margin-bottom: 2rem;
+  }
+
+  .left {
+    display:flex;
+    flex-direction: row;
+    min-width: 50%;
+    /* border: solid  5px red; */
+   }
+
+
+  .right {
+    display:flex;
+    flex-direction: row;
+    min-width: 70%;
+    margin-left: 5rem;
+    /* border: solid  5px red; */
+    
+    
+  }
+
+  .background-image{
+    width: 100%
+  }
+
+  .form--login{
+    text-align: left;
+    min-height: 70rem;
+    min-width: 70rem;
+    margin: 10rem;
+  } 
+
+  .registerButtons {
+    display: flex;
+    flex-direction: row;
   }

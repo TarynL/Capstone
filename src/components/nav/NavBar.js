@@ -23,10 +23,10 @@ const history = useHistory();
           <Link className="nav-link" to="/">Home</Link>
         </li>
          <li className="nav-item">
-          <Link className="nav-link" to="/yourList">Your List</Link>
+          <Link className="nav-link" to="/yourList">Your Catalog</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/collections">Collections</Link>
+          <Link className="nav-link" to="/collections">Full Collection</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" onClick={handleLogout} to="/login"> Logout </Link>
