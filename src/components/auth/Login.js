@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css"
-import { Footer } from "../nav/Footer"
+// import { Footer } from "../nav/Footer"
 import plasticRecyc from "../../images/plasticRecyc.jpeg"
 import LoginLogo from "../../images/LoginLogo.png"
 

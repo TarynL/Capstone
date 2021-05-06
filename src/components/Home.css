@@ -15,6 +15,7 @@ body {
 }
 .header{
     margin-top:3rem;
+    
 }
 
 /* .Highlight{
@@ -24,15 +25,29 @@ body {
     padding: 8px;
 } */
 
-.locationHighlight{
-    border: 1px solid black;
-    width: 60%;
-    height: 600px;
+.locationList{
+    
+    /* width: 60%; */
+    
+    height: 800px;
     padding: 8px;
     overflow: scroll;
-    background-color:  #a7b3a5;
+    /* background-color:  #a7b3a5; */
     
 }
+.headerLocation {
+    text-align: Center;
+    background-color:#b56357 ;
+    padding:1rem;
+    
+    
+}
+
+.locationContainer{
+    border: 3px solid #a7b3a5;
+    margin: 4rem 2rem ;
+}
+
 .factHighlight {
     
     width: 100%;
@@ -112,8 +127,9 @@ body {
 }
 
 .item3{
+    grid-row:2/ span 3;
     grid-row-start: 2;
-    grid-row-end:3;
+    grid-row-end:4;
     grid-column-start: 4; 
     grid-column-end: 4;
 } 
@@ -169,3 +185,8 @@ body {
     background-blend-mode:overlay;
     background-repeat: no-repeat;  
   } */
+
+  .map{
+      height:300px;
+      width: 300px;
+  }

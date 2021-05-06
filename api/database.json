@@ -3,21 +3,25 @@
     {
       "id": 1,
       "name": "Taryn Lytle",
-      "email": "taryn@taryn.com"
+      "email": "taryn@taryn.com",
+      "zipcode": 37207
     },
     {
       "id": 2,
       "name": "Haley Grant",
-      "email": "haley@haley.com"
+      "email": "haley@haley.com",
+      "zipcode": 37207
     },
     {
       "id": 3,
       "name": "Augustus Walter",
-      "email": "gus@gus.com"
+      "email": "gus@gus.com",
+      "zipcode": 37216
     },
     {
       "email": "earl@earl.com",
       "name": "Earl earl",
+      "zipcode": 37201,
       "id": 4
     }
   ],
@@ -107,20 +111,7 @@
       "id": 12
     }
   ],
-  "lists": [
-    {
-      "userId": 1,
-      "recyclableId": 5,
-      "userNotes": "",
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "recyclableId": 4,
-      "userNotes": "",
-      "id": 2
-    }
-  ],
+  "lists": [],
   "facts": [
     {
       "id": 1,

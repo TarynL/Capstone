@@ -1,5 +1,11 @@
+
+
+const recycApi = "https://data.nashville.gov/resource/j7nq-7ct5.json"
+
 // variable for json server 
 const remoteURL = "http://localhost:8088"
+
+const currentUser = sessionStorage.getItem("recyclePedia_user")
 
 // fetch call for facts by id 
 export const getFactById = (id) => {
@@ -33,4 +39,19 @@ export const getRandomTip = () => {
       const randomTip = tips[randomIndex];
       return randomTip.id;
     });
+}
+
+// fetch call for recycling centers
+export const getRecycCenters = () => {
+  return fetch (`${recycApi}`)
+  .then(res => res.json())
+}
+
+// fetch call for recycling centers by zip
+export const getLocationByZip = () => {
+  return fetch (`${recycApi}/zip`)
+}
+
+export const getUsersByZip = () => {
+  return fetch (`${remoteURL}/users?id=${currentUser}`)
 }
