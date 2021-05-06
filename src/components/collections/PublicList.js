@@ -89,17 +89,18 @@ export const PublicList = () => {
         return (
             <>
                 <div className="headerButtons">
+                    
+
+                    <form id="form">
+                        <i class="fas fa-search"></i>
+                        <input class="search" type="text" required placeholder="Search for Recyclable..."
+                            onChange={handleSearch} />
+                    </form>
                     <button type="button"
                         className="button btn-add"
                         onClick={() => { history.push("/collections/create") }}>
                         Add a New Recyclable
                 </button>
-
-                    <form id="form">
-                        <i class="fas fa-search"></i>
-                        <input type="text" required placeholder="Search for Recyclable..."
-                            onChange={handleSearch} />
-                    </form>
                 </div>
                 <div className="container cards">
 

@@ -94,12 +94,14 @@
   .right {
     display:flex;
     flex-direction: row;
-    min-width: 70%;
+
+    /* min-width: 70%; */
     margin-left: 5rem; 
   }
 
   .background-image{
-    width: 100%
+    object-fit: cover;
+
   }
 
   .form--login{
