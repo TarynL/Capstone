@@ -32,7 +32,7 @@
     {
       "id": 2,
       "title": "Cereal Box",
-      "image": "http://neatdesigns.net/wp-content/uploads/2012/02/1332.jpg",
+      "image": "https://i5.walmartimages.com/asr/d9c97067-e84d-4f6c-9ae5-3eb340717889.0774e77047732c6e545408debdfea472.jpeg",
       "instruction": "All contents removed. Cardboard should be flattened.",
       "recycle": true
     },
@@ -161,6 +161,58 @@
       "id": 8,
       "fact": "Each day, American businesses generate enough paper to circle the Earth 20 times!",
       "image": "https://cdn.pixabay.com/photo/2016/11/22/14/23/paper-1849364__480.jpg"
+    }
+  ],
+  "tips": [
+    {
+      "id": 1,
+      "tip": "Start composting",
+      "image": "https://images.freeimages.com/images/small-previews/640/good-food-waste-1637887.jpg"
+    },
+    {
+      "id": 2,
+      "tip": "Always carry a reusable water bottle",
+      "image": "https://thumbor.thedailymeal.com/ioVdNC6CeFY6sPK_8QgGR-UaYtA=/870x565/filters:focal(859x467:860x468)/https://www.thedailymeal.com/sites/default/files/2020/02/25/shutterstock_1240547659.jpg"
+    },
+    {
+      "id": 3,
+      "tip": "Carry re-usable shopping bags",
+      "image": "https://assets.epicurious.com/photos/5cf5795da545f2323c717291/16:9/w_2560%2Cc_limit/GroceryBag_HERO_052919_052919-0149.jpg"
+    },
+    {
+      "id": 4,
+      "tip": "Ask for no straw in your drink order when out",
+      "image": "https://images.freeimages.com/images/large-previews/859/straws-blue-1541378.jpg"
+    },
+    {
+      "id": 5,
+      "tip": "Ditch tissues for handkerchiefs",
+      "image": "https://www.fairtradewinds.net/wp-content/uploads/2018/03/handkerchief-chicago-1.jpg"
+    },
+    {
+      "id": 6,
+      "tip": "Think second-hand first when purchasing something",
+      "image": "https://thehoya.com/wp-content/uploads/2020/02/b2_dt_EmmaGinsbergForTheHoya.png"
+    },
+    {
+      "id": 7,
+      "tip": "Use shampoo/conditioner bars",
+      "image": "https://images.squarespace-cdn.com/content/v1/5442b6cce4b0cf00d1a3bef2/1565395010319-6CFZUM2POCJOJ2TVT1QY/ke17ZwdGBToddI8pDm48kPhv-QnLnHl70m51ucsP1cBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwEv36x-EUL2-BSQ5feDhwGOeA_q58oBmCv_n0Nr1r6vSOFC-zFl94m0y4xOhE7YG0/Shampoo%2BBar%2BSubscriptions%2B-%2BbyHumankind"
+    },
+    {
+      "id": 8,
+      "tip": "Home cook as much food as you can",
+      "image": "https://www.feastingathome.com/wp-content/uploads/2019/11/lo-mein_-9.jpg"
+    },
+    {
+      "id": 9,
+      "tip": "Look for glass containers when grocery shopping",
+      "image": "https://www.productcare.org/app/uploads/2018/12/plastic-free-kitchen.jpg"
+    },
+    {
+      "id": 10,
+      "tip": "Go paperless for all your bills",
+      "image": "https://thehubbydiaries.files.wordpress.com/2010/04/mail_stack.jpg"
     }
   ]
 }

@@ -44,19 +44,19 @@ export const PublicList = () => {
         let userInput = evt.target.value
         let searchMatch = []
         if (userInput.length > 0) {
-             searchMatch = recyc.filter(res => {
+            searchMatch = recyc.filter(res => {
                 if (res.title.toLowerCase().includes(userInput.toLowerCase()))
                     return res.title
             })
             setSearchResults(searchMatch)
         }
-        else{
+        else {
             setSearchResults(recyc)
         }
     }
 
 
-    
+
     const handleAddToList = (recyclableId) => {
 
         const newRec = {
@@ -70,9 +70,9 @@ export const PublicList = () => {
 
     }
     const handleDeleteFromList = (id) => {
-       deleteRecyclable(id)
-       .then (() => getAllMyRecyclables(id))
-        
+        deleteRecyclable(id)
+            .then(() => getAllMyRecyclables(id))
+
     }
 
 
@@ -88,37 +88,39 @@ export const PublicList = () => {
     if (isLoading === false) {
         return (
             <>
-                <button type="button"
-                    className="button"
-                    onClick={() => { history.push("/collections/create") }}>
-                    Add a New Recyclable
+                <div className="headerButtons">
+                    
+
+                    <form id="form">
+                        <i class="fas fa-search"></i>
+                        <input class="search" type="text" required placeholder="Search for Recyclable..."
+                            onChange={handleSearch} />
+                    </form>
+                    <button type="button"
+                        className="button btn-add"
+                        onClick={() => { history.push("/collections/create") }}>
+                        Add a New Recyclable
                 </button>
-
-                <form id="form">
-                <i class="bi bi-search"></i> 
-                <input type="text"  required placeholder="Search for Recyclable..."
-                        onChange={handleSearch} />
-                </form>
-
+                </div>
                 <div className="container cards">
 
                     <div className="row">
 
                         {searchResults.map(cyc => {
-                          
+
                             let isInList = mine.find(rec => rec.recyclableId === cyc.id)
                             if (isInList) {
                                 isSelected = true
-                                   
-                         } else { isSelected = false }
 
-                         return < PublicCard
-                         key = { cyc.id }
-                         recyclable = { cyc }
-                         isSelected = {isSelected}
-                         handleAddToList = { handleAddToList }  
-                         handleDeleteFromList = { handleDeleteFromList }
-                             />
+                            } else { isSelected = false }
+
+                            return < PublicCard
+                                key={cyc.id}
+                                recyclable={cyc}
+                                isSelected={isSelected}
+                                handleAddToList={handleAddToList}
+                                handleDeleteFromList={handleDeleteFromList}
+                            />
 
 
 

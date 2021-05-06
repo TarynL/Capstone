@@ -13,29 +13,63 @@
   }
 
 .fact-spotlight {
-    max-width: 400px;
+    width: 1000px;
     display: flex;
-    border: 1px solid #a7b3a5;
-    padding: 10px;
-    margin: 10px;
+    flex-direction: row;
+    max-height: 300px;
+    margin: 5rem 1rem 0 1rem;
   }
   
-.fact-spotlight img {
-    width: 300px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
+
   
-.fact-spotlight p {
+.factText {
     color: black;
+    border: 5px solid #a7b3a5;
+    width:1000px;
+    border-left: none;
+    margin: 40px 0 20px 0;
+    font-size: 14pt;
+    height: 200px; 
+    padding: 0 5px 0 15px;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
+    
   }
 
-.factImage{
-    height: 200px;
-    width: 200px;
+ .factImage{
+    height: 300px;
+    width: 400px; 
     object-fit: cover;
+    border: solid white 8px;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2)
   }
 
-.tipsList{
-  background-color: white;
-}
+  .tip-spotlight {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    max-height: 300px;;
+    margin: 5rem 1rem 0 1rem;
+  }
+
+  .tipText {
+    color: black;
+    text-align: center;
+    border: 5px solid #a7b3a5;
+    width:1000px;
+    border-right: none;
+    margin: 40px 0 20px 0;
+    font-size: 14pt;
+    height: 200px; 
+    padding: 0 5px 0 15px;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
+    
+  }
+
+  .tipImage{
+    height: 300px;
+    width: 400px; 
+    object-fit: cover;
+    border: solid white 8px;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2)
+  }
+

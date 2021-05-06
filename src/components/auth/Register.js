@@ -91,7 +91,7 @@ export const Register = () => {
                     </fieldset>
                     <div className="registerButtons">
                     <fieldset className="submitButtonSection">
-                        <button type="submit" className="registerButton"> Sign in </button>
+                        <button type="submit" className="registerButton"> Register </button>
                     </fieldset>
                     <fieldset className="cancelButtonSection">
                         <button type="cancel" className="registerButton" onClick={() => history.push(`/login`)} > Cancel </button>

@@ -1,28 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { getTipById } from "../../modules/HomeManager"
 import "./Spotlight.css";
 
-export const TipsSpotlight = () => {
-    return(
-        <>
-        <div className="tips-spotlight">
-            <ul className="tipsList">
-                <li>Start composting</li>
-                <li>Always carry a reusable water bottle</li>
-                <li>Carry re-usable shopping bags</li>
-                <li>Ask for no straw in your drink order when out</li>
-                <li>Ditch tissues for handkerchiefs</li>
-                <li>Think second-hand first when purchasing something</li>
-                <li>Swap paper towels for reusable rags</li>
-                <li>Use shampoo/conditioner bars</li>
-                <li>Buy electronics second-hand to avoid the plastic packaging</li>
-                <li>Home cook as much food as you can</li>
-                <li> Look for glass containers when grocery shopping</li>
-                <li>Clothing swap with friends</li>
-                <li>Repair things</li>
-                <li>Go paperless for all your bills</li>
-                <li>Walk more and Drive less</li>                
-            </ul>
-        </div>
-        </>
+export const TipsSpotlight = ({ tipId }) => {
+    const [tip, setTip] = useState({})
+
+    useEffect(() => {
+        getTipById(tipId)
+            .then(tip => {
+                setTip(tip)
+            })
+    }, [tipId])
+    return (
+    
+            <div className="tip-spotlight">
+                <div className="tipText">
+                    <h3 className="header headerTip">Tips on going Zero Waste</h3>
+                    <p>{tip.tip}</p>
+                </div>
+                <div className="">
+                    <img className=" tipImage" src={tip.image} alt="tip" />
+                </div>
+            </div>
+
+        
     )
 }

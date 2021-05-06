@@ -22,7 +22,7 @@
   fieldset {
     min-width: 0;
     padding: .5rem 0;
-    margin-left: 1rem;
+    margin-left: 0;
     border: 0;
 }
 
@@ -65,6 +65,7 @@
   .linkRegister{
     color:#b56357;
   }
+
   .linkRegister:hover{
     color:#a7b3a5;
   }
@@ -72,40 +73,35 @@
   .LoginLogo {
     height: 80px;
     width: 80px;
-    
-    
-
   }
+
   .login--logo {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     width: 15rem;
     align-items: center;
-    /* border: solid  5px red; */
     margin-bottom: 2rem;
   }
 
   .left {
     display:flex;
     flex-direction: row;
-    min-width: 50%;
-    /* border: solid  5px red; */
+    min-width: 50%; 
    }
 
 
   .right {
     display:flex;
     flex-direction: row;
-    min-width: 70%;
-    margin-left: 5rem;
-    /* border: solid  5px red; */
-    
-    
+
+    /* min-width: 70%; */
+    margin-left: 5rem; 
   }
 
   .background-image{
-    width: 100%
+    object-fit: cover;
+
   }
 
   .form--login{
@@ -118,4 +114,11 @@
   .registerButtons {
     display: flex;
     flex-direction: row;
+    margin: 1rem;
   }
+
+  .submitButtonSection{
+    margin-right: 1rem;
+  }
+
+.cancelButtonSection{}
