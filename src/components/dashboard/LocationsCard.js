@@ -17,20 +17,24 @@ export const LocationCard = ({location}) => {
         <>
         <div className="location-list">
         
-            <h5 className="location-name"><b><u>{location.facility_name}</u></b></h5>
+            <h5 className="location-name"><b><u><a href="https://www.google.com/maps/@36.1868667,-87.0661216,10z">{location.facility_name}</a></u></b></h5>
             <p><b>Address:</b> {location.address} </p>
-            <ul> Hours of operation:
-                <li><b>Monday:</b> {location.monday}</li>
-                <li><b>Tuesday:</b> {location.tuesday}</li>
-                <li><b>Wednesday:</b> {location.wednesday}</li>
-                <li><b>Thursday: </b> {location.thursday}</li>
-                <li><b>Friday: </b> {location.friday}</li>
-                <li><b>Saturday: </b> {location.saturday}</li>
-                <li><b>Sunday: </b> {location.sunday}</li>
-            </ul>
+            <p><b>Hours of operation:</b></p>
+             
+                <p><b>Monday:</b> {location.monday}</p>
+                <p><b>Tuesday:</b> {location.tuesday}</p>
+                <p><b>Wednesday:</b> {location.wednesday}</p>
+                <p><b>Thursday: </b> {location.thursday}</p>
+                <p><b>Friday: </b> {location.friday}</p>
+                <p><b>Saturday: </b> {location.saturday}</p>
+                <p><b>Sunday: </b> {location.sunday}</p>
+            
         </div>
         
         
         </>
     )
 }
+
+
+{/* <a href="https://www.google.com/maps/@36.1868667,-87.0661216,10z">{location.facility_name}</a> */}

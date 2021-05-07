@@ -3,25 +3,21 @@
     {
       "id": 1,
       "name": "Taryn Lytle",
-      "email": "taryn@taryn.com",
-      "zipcode": 37207
+      "email": "taryn@taryn.com"
     },
     {
       "id": 2,
       "name": "Haley Grant",
-      "email": "haley@haley.com",
-      "zipcode": 37207
+      "email": "haley@haley.com"
     },
     {
       "id": 3,
       "name": "Augustus Walter",
-      "email": "gus@gus.com",
-      "zipcode": 37216
+      "email": "gus@gus.com"
     },
     {
       "email": "earl@earl.com",
       "name": "Earl earl",
-      "zipcode": 37201,
       "id": 4
     }
   ],
@@ -83,13 +79,6 @@
       "id": 8
     },
     {
-      "title": "Milk Jug",
-      "image": "https://sanjoserecycles.org/wp-content/uploads/2015/02/milk-jug-empty.jpg",
-      "instruction": "Empty liquid. Rinse thoroughly.",
-      "recycle": true,
-      "id": 9
-    },
-    {
       "title": "Toilet Paper Roll",
       "image": "https://images.freeimages.com/images/small-previews/b63/toilet-paper-roll-1416663.jpg",
       "instruction": "Remove all paper.",
@@ -109,9 +98,35 @@
       "instruction": "Empty contents. Rinse thoroughly",
       "recycle": true,
       "id": 12
+    },
+    {
+      "title": "Milk Jug",
+      "image": "https://sanjoserecycles.org/wp-content/uploads/2015/02/milk-jug-empty.jpg",
+      "instruction": "Empty liquid. Remove label",
+      "recycle": true,
+      "id": 13
     }
   ],
-  "lists": [],
+  "lists": [
+    {
+      "userId": 1,
+      "recyclableId": 3,
+      "userNotes": "",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "recyclableId": 2,
+      "userNotes": "",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "recyclableId": 1,
+      "userNotes": "",
+      "id": 3
+    }
+  ],
   "facts": [
     {
       "id": 1,

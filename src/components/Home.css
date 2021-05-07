@@ -9,7 +9,8 @@ body {
     height: 200px;
     padding: 8px;
     font-weight: bold;
-    background-image: url(homeHeader.jpeg);
+    /* background-image: url(homeHeader.jpeg); */
+    background-image: url(recyc.jpeg);
     background-blend-mode: overlay ;
     background-color: rgba(255, 255, 255, 0.788);
 }
@@ -190,3 +191,5 @@ body {
       height:300px;
       width: 300px;
   }
+
+  
