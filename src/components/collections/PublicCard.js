@@ -9,7 +9,7 @@ export const PublicCard = ({ recyclable, handleAddToList, handleDeleteFromList, 
     
 
     const toggleSelected = (evt) => {
-        console.log(evt)
+        
         if (selected === true) { setSelected(false) }
         else { setSelected(true) }
     }
