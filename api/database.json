@@ -19,6 +19,16 @@
       "email": "earl@earl.com",
       "name": "Earl earl",
       "id": 4
+    },
+    {
+      "email": "browns@lalashouse.org",
+      "name": "Bowman Bronson",
+      "id": 5
+    },
+    {
+      "email": "tatum@buttface.edu",
+      "name": "tatum hall",
+      "id": 6
     }
   ],
   "recyclables": [
@@ -79,13 +89,6 @@
       "id": 8
     },
     {
-      "title": "Milk Jug",
-      "image": "https://sanjoserecycles.org/wp-content/uploads/2015/02/milk-jug-empty.jpg",
-      "instruction": "Empty liquid. Rinse thoroughly.",
-      "recycle": true,
-      "id": 9
-    },
-    {
       "title": "Toilet Paper Roll",
       "image": "https://images.freeimages.com/images/small-previews/b63/toilet-paper-roll-1416663.jpg",
       "instruction": "Remove all paper.",
@@ -105,6 +108,13 @@
       "instruction": "Empty contents. Rinse thoroughly",
       "recycle": true,
       "id": 12
+    },
+    {
+      "title": "Milk Jug",
+      "image": "https://sanjoserecycles.org/wp-content/uploads/2015/02/milk-jug-empty.jpg",
+      "instruction": "Empty liquid. Remove label",
+      "recycle": true,
+      "id": 13
     }
   ],
   "lists": [
