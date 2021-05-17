@@ -24,7 +24,7 @@ export const LocationList = () => {
     }, [])
 
     return(
-        <>
+  
         <div className= "location-container">
             
             {locations.map(location =>
@@ -34,6 +34,6 @@ export const LocationList = () => {
                 />)}
         </div>
 
-        </>
+       
     )
 }

@@ -1,37 +1,55 @@
 
 
 .card {
-  width: 18rem;
+    width: 18rem;
     display: flex;
-    flex-direction: column;
-    border: 1px dashed gray;
+    /* flex-direction: column; */
+    /* border: 1px dashed gray; */
     padding: 10px;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    /* justify-content:center; */
+    
     
 
   }
+  .par{
+    height: 100px;
+    margin-bottom: 5px;
+  }
   
-  
+  .imageBox {
+    display: flex;
+    justify-content: center;
+  }
   
   .card-content{
     color: black;
     
   }
 
+ .tog {
+   display: flex;
+   align-self: flex-start;
+ }
+  /* .card-title {
+    display: flex;
+    height: 80px;
+  } */
+
   .card-content h3 {
     border-bottom: solid 1px #a7b3a5;
   }
 
   .recyclableImage{
+    display: flex;
+    align-items: center;
     height: 100px;
     width: 100px;
-    object-fit: cover;
-    position: center;
-    justify-content:center;
+    object-fit: contain;
+    position:relative;
+    
   }
 
   .toggle-container {

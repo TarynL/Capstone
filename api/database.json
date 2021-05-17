@@ -50,7 +50,7 @@
       "id": 3,
       "title": "Soup Can",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_pyPgkdg8Y0SGDpgsRJetlTbSHHzm_dAw26YxY-ibNkrWqDeY2ToG9PDEfZ24b-28aX7qBk&usqp=CAc",
-      "instruction": "All contents removed. Rinse thoroughly. Remove label and throw in trash.",
+      "instruction": "Rinse thoroughly. Remove label and throw in trash.",
       "recycle": true
     },
     {
@@ -75,7 +75,7 @@
       "id": 6
     },
     {
-      "title": "Paper Towel Roll",
+      "title": "Paper Towel",
       "image": "https://tiphero.info/wp-content/uploads/2016/04/Paper-Towel-FI-2.jpg",
       "instruction": "Remove all paper.",
       "recycle": true,
@@ -89,7 +89,7 @@
       "id": 8
     },
     {
-      "title": "Toilet Paper Roll",
+      "title": "Toilet Paper",
       "image": "https://images.freeimages.com/images/small-previews/b63/toilet-paper-roll-1416663.jpg",
       "instruction": "Remove all paper.",
       "recycle": true,

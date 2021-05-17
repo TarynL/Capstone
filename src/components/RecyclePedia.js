@@ -19,7 +19,7 @@ export const RecyclePedia = () => (
               <NavBar />
               <div className="applicationView">
               <ApplicationViews />
-              </div>p
+              </div>
               <div>
               <Footer />
               </div>

@@ -16,7 +16,7 @@ export const PrivateCard = ({ recyclable, handleDeleteRecyclable }) => {
             <div className="card col-2">
                 <div className="card-content ">
                     <h3>{recyclable.recyclable.title}</h3>
-                    <img className="recyclableImage img-fluid" src={recyclable.recyclable.image} alt="recyclable" />
+                    <div className="imageBox"><img className="recyclableImage" src={recyclable.recyclable.image} alt="recyclable" /></div>
                     <p><strong>Instructions: </strong> {recyclable.recyclable.instruction}</p>
                     <p><strong>Notes:</strong>{recyclable.userNotes}</p>
                 </div>
