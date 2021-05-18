@@ -40,16 +40,18 @@ export const PublicCard = ({ recyclable, handleAddToList, handleDeleteFromList, 
             <div className="card col-2 " >
 
                 <div className="card-content">
-                    <h3>{recyclable.title}</h3>
-                    <img className="recyclableImage img-fluid" src={recyclable.image} alt="recyclable" />
-                    <p><strong>Instructions: </strong> {recyclable.instruction}</p>
+                    <div className ="card-title"><h4>{recyclable.title}</h4></div>
+                    {/* img-fluid-className for image  */}
+                    <div className= "imageBox"><img className="recyclableImage " src={recyclable.image} alt="recyclable" /></div>
+                    <div className= "par"><p><strong>Instructions: </strong> {recyclable.instruction}</p></div>
 
-                    <div className="toggle-container" required onClick={toggleSelected} >
+                    <div className="tog">
+                        <div className="toggle-container" required onClick={toggleSelected} >
                         <div className={`dialog-button ${selected ? "" : "disabled"}`} required 
                             onClick={selected ? () => getNewRecyc() : () => handleAddToList(recyclable.id)}  >
                             {selected ? "Remove" : "Add"}
                         </div>
-                    </div>
+                    </div></div>
 
                 </div>
             </div>

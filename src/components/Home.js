@@ -79,7 +79,8 @@ export const Home = () => {
 
                         <h5>First tuesday of the month</h5>
                     </div> */}
-
+{tipsSpotlightId && <TipsSpotlight tipId={tipsSpotlightId} />}
+                    <button className="button" onClick={nextSpotlightTip}>Another Tip</button>
                 </div>
 
 
@@ -93,12 +94,11 @@ export const Home = () => {
 
                 </div>
 
-                <div className="item4 tipsHighlight">
-                    {tipsSpotlightId && <TipsSpotlight tipId={tipsSpotlightId} />}
-                    <button className="button" onClick={nextSpotlightTip}>Another Tip</button>
+                {/* <div className="item4 tipsHighlight">
+                    
 
 
-                </div>
+                </div> */}
             </div>
         </>
     )

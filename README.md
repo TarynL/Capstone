@@ -21,7 +21,12 @@ A single page application that provides a place for users to keep track of what 
 ## Wireframe and ERD
 
 WireFrame
-![wireframe](./images/Wireframe.png?raw=true "Wireframe")
+![wireframe](src/images/Wireframe.png?raw=true "Wireframe")
 
 ERD
-![erd](./images/ERD.png?raw=true "ERD")
+![erd](src/images/ERD.png?raw=true "ERD")
+
+## Preview
+
+![preview](src/images/Preview.png?raw=true "Preview")
+

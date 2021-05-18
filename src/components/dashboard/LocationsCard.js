@@ -37,4 +37,3 @@ export const LocationCard = ({location}) => {
 }
 
 
-{/* <a href="https://www.google.com/maps/@36.1868667,-87.0661216,10z">{location.facility_name}</a> */}
