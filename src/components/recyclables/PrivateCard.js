@@ -15,17 +15,17 @@ export const PrivateCard = ({ recyclable, handleDeleteRecyclable }) => {
         
             <div className="card col-2">
                 <div className="card-content ">
-                    <h3>{recyclable.recyclable.title}</h3>
+                    <h4>{recyclable.recyclable.title}</h4>
                     <div className="imageBox"><img className="recyclableImage" src={recyclable.recyclable.image} alt="recyclable" /></div>
                     <p><strong>Instructions: </strong> {recyclable.recyclable.instruction}</p>
                     <p><strong>Notes:</strong>{recyclable.userNotes}</p>
                 </div>
                 <button type="button"
-                    className="button"
+                    className="button privateEdit"
                     onClick={() => history.push(`/yourList/${recyclable.id}/edit`)}>
                     Add/Edit Notes
             </button>
-                <button type="button" className="button" onClick={() => handleDeleteRecyclable(recyclable.id)}>Delete</button>
+                <button type="button privateDelete" className="button" onClick={() => handleDeleteRecyclable(recyclable.id)}>Delete</button>
             </div>
         </>
     )

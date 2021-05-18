@@ -54,7 +54,7 @@
       "recycle": true
     },
     {
-      "title": "Mail",
+      "title": "Junk Mail",
       "image": "https://images.freeimages.com/images/small-previews/445/correo-aereo-1310728.jpg",
       "instruction": "Leave plastic lining inside.",
       "recycle": true,
@@ -115,20 +115,86 @@
       "instruction": "Empty liquid. Remove label",
       "recycle": true,
       "id": 13
+    },
+    {
+      "title": "Newspaper",
+      "image": "https://lh3.googleusercontent.com/proxy/mxOfkI4OVPGQw1qablBISEM3rLhJX3WjKLHacHo9nF9nnT2OF8XcdYdVzH-qi7p-fX8kCywfXBmdandctzwEKE0N7GEAW_ldQNuhCYClgffIR8A0WLPSPnWChdg6AAkKVkGOMhj8-6I32SbLYFdb5ngqG6peutLJ",
+      "instruction": "Fold and throw in bin. No food residue.",
+      "recycle": true,
+      "id": 14
+    },
+    {
+      "title": "Cardboard Box",
+      "image": "https://www.packagingprice.com/media/catalog/product/cache/4ae7abb9d368da867aaba2080e002908/m/u/multi-depth_boxes.jpg",
+      "instruction": "Break down. Fold and throw in bin.",
+      "recycle": true,
+      "id": 16
+    },
+    {
+      "title": "Broth Carton",
+      "image": "https://target.scene7.com/is/image/Target/GUEST_8a60e1ac-c736-449c-a625-767ffba3cf72?wid=488&hei=488&fmt=pjpeg",
+      "instruction": "Empty contents. Rinse thoroughly. ",
+      "recycle": true,
+      "id": 17
+    },
+    {
+      "title": "Phonebook",
+      "image": "http://static-35.sinclairstoryline.com/resources/media/c09179da-fbb0-46f9-908f-f47a36caa8fd-Calgary_phone_book.jpg?1445530250967",
+      "instruction": "Remove any contaminants.",
+      "recycle": true,
+      "id": 18
+    },
+    {
+      "title": "Paper Bag",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61oOjJo5NeL._SL1000_.jpg",
+      "instruction": "Empty contents. No residue.",
+      "recycle": true,
+      "id": 20
+    },
+    {
+      "title": "Shampoo Bottle",
+      "image": "https://scx2.b-cdn.net/gfx/news/hires/2020/shampoobottle.jpg",
+      "instruction": "Empty contents. Rinse thoroughly. ",
+      "recycle": true,
+      "id": 21
     }
   ],
   "lists": [
     {
       "userId": 1,
-      "recyclableId": 5,
-      "userNotes": "",
-      "id": 1
-    },
-    {
-      "userId": 1,
       "recyclableId": 4,
       "userNotes": "",
       "id": 2
+    },
+    {
+      "userId": 1,
+      "recyclableId": 8,
+      "userNotes": "",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "recyclableId": 2,
+      "userNotes": "",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "recyclableId": 14,
+      "userNotes": "",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "recyclableId": 3,
+      "userNotes": "Lid goes inside."
+    },
+    {
+      "userId": 1,
+      "recyclableId": 5,
+      "userNotes": "",
+      "id": 10
     }
   ],
   "facts": [

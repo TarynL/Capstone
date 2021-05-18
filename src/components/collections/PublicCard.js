@@ -40,7 +40,7 @@ export const PublicCard = ({ recyclable, handleAddToList, handleDeleteFromList, 
             <div className="card col-2 " >
 
                 <div className="card-content">
-                    <div className ="card-title"><h3>{recyclable.title}</h3></div>
+                    <div className ="card-title"><h4>{recyclable.title}</h4></div>
                     {/* img-fluid-className for image  */}
                     <div className= "imageBox"><img className="recyclableImage " src={recyclable.image} alt="recyclable" /></div>
                     <div className= "par"><p><strong>Instructions: </strong> {recyclable.instruction}</p></div>

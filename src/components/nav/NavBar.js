@@ -20,7 +20,7 @@ const history = useHistory();
       <div>
       <ul className="nav nav-pills nav-fill">
         <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link " to="/">Home</Link>
         </li>
          <li className="nav-item">
           <Link className="nav-link" to="/yourList">Your Catalog</Link>
